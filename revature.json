@@ -1,0 +1,30 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/AggregateFunctionsTest.java",
+      "testCases": [
+        {
+          "methodName": "testActivityCalculatePayroll",
+          "label": "Verify SUM aggregate calculates total payroll",
+          "description": "Runs problem1(), which should sum all employee salaries in the employee table. Compares the returned value to the expected total payroll amount."
+        },
+        {
+          "methodName": "testActivityCountTheSmiths",
+          "label": "Verify COUNT aggregate counts all employees with last name 'Smith'",
+          "description": "Runs problem2(), which should count how many employees have the last name Smith. Compares the result to the expected count of 2."
+        },
+        {
+          "methodName": "testActivityFindMinSalary",
+          "label": "Verify MIN aggregate returns the lowest salary",
+          "description": "Runs problem3(), which should return the minimum salary in the employee table. Compares the result to the expected minimum of 42500.00."
+        },
+        {
+          "methodName": "testActivityFindMaxSalary",
+          "label": "Verify MAX aggregate returns the highest salary",
+          "description": "Runs problem4(), which should return the maximum salary in the employee table. Compares the returned value to the expected maximum of 120000.00."
+        }
+      ]
+    }
+  ]
+}
